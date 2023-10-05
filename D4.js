@@ -89,9 +89,7 @@ console.log(x);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-function reverseString(stringa){
-    
-}
+
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
