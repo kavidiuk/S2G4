@@ -3,13 +3,11 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-//l1=10;
-//l2=20;
 function area (l1,l2){   
-    risultato = l1*l2;
+    let risultato = l1*l2;
     return risultato;
 }
-console.log(risultato);
+console.log(area(10,20));
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
  La funzione deve ritornare la somma dei due parametri, ma se il valore dei due parametri è il medesimo deve invece tornare
@@ -22,7 +20,7 @@ if(num1===num2){
     return (num1+num2)*3;
 }else{
     return num1 + num2;
-}
+    }
 }
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
@@ -30,17 +28,17 @@ if(num1===num2){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-//num1=2;
-function crazyDiff (num3=2){
-    if(num3<19){
-        differenza = num3-19;
-        return defferenza;
+
+function crazyDiff (num){
+    if(num<19){
+        let differenza = num-19;
+        return differenza;
     }else{
-        differenzaAssoluta = 3*(num3-19);
-    }
-    //return differenza;
+        let differenzaAssoluta = 3*(num-19);
+        return differenzaAssoluta;
+    }   
 }
-console.log("La differenza è: ",  differenzaAssoluta + differenza);
+console.log(crazyDiff(20));
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
@@ -54,7 +52,7 @@ function boundary(n){
         return n;
     }
 }
-console.log(n);
+console.log(boundary(10));
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
  La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita, ma se la stringa fornita comincia già con "EPICODE" allora deve
@@ -67,9 +65,10 @@ function epify (str){
         return str;
     }else{
         str= ("EPICODE" + str);
+        return str;
     }
 }
-console.log(str);
+console.log(epify("Epic"));
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
@@ -83,12 +82,23 @@ function check3and7(x){
         return x;
     }
 }
-console.log(x);
+console.log(check3and7(5));
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
+const reverseString = function(str){
+    let newString =""
+    for(let i = str.length-1; i>=0;i--){
+        //console.log(str[i]);
+        newString = newString + str[i].toUpperCase()
+    }
+    return newString;
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+}
+console.log(reverseString("epicode"));
+console.log(reverseString("ciao"))
+
+
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
